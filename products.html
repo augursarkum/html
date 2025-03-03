@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add to Cart</title>
+</head>
+<body>
+  <button id="add-btn">Add to Cart</button>
+  <script>
+    let cartCount = 0;
+    document.getElementById('add-btn').addEventListener('click', () => {
+      cartCount++;
+      localStorage.setItem('cartCount', cartCount);
+      window.location.href = 'cart.html';
+    });
+  </script>
+</body>
+</html>
