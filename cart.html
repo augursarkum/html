@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+</head>
+<body>
+  <h1>Cart</h1>
+  <p id="cart-count"></p>
+  <script>
+    let cartCount = localStorage.getItem('cartCount');
+    document.getElementById('cart-count').innerHTML = `You have ${cartCount} items in your cart.`;
+  </script>
+</body>
+</html>
